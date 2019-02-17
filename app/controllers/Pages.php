@@ -17,14 +17,17 @@ class Pages extends Controller
 
     public function index(){
         $data = [
-            'title'=>'My Custom Mvc',
+            'title'=>'SharePosts',
+            'description'=>'Simple social network built on my custom PHP Mvc Framework',
             ];
         $this->view('pages/index',$data);
 
     }
 
     public function about(){
-        $data=['title'=>'about us'];
+        $data=['title'=>'About us',
+            'description'=>'App to share posts with other users',
+            ];
         $this->view('pages/about',$data);
     }
 
